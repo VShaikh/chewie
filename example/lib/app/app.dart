@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:chewie/chewie.dart';
 import 'package:chewie_example/app/theme.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
@@ -310,7 +311,7 @@ class _ChewieDemoState extends State<ChewieDemo> {
                 ),
               ],
             ),
-            if (Platform.isAndroid)
+            if (!kIsWeb && Platform.isAndroid)
               ListTile(
                 title: const Text("Delay"),
                 subtitle: DelaySlider(
