@@ -66,7 +66,7 @@ class PlayerWithControls extends StatelessWidget {
                     milliseconds: 250,
                   ),
                   child: const DecoratedBox(
-                    decoration: BoxDecoration(color: Colors.black54),
+                    decoration: BoxDecoration(color: Colors.transparent),
                     child: SizedBox.expand(),
                   ),
                 ),
